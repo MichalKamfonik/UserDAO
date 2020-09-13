@@ -1,0 +1,9 @@
+CREATE DATABASE workshop2 CHARACTER SET UTF8mb4 COLLATE utf8mb4_unicode_ci;
+USE workshop2;
+CREATE TABLE users (
+    id INT NOT NULL AUTO_INCREMENT,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(60) NOT NULL,
+    PRIMARY KEY (id)
+);
